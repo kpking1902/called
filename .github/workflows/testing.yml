@@ -16,5 +16,5 @@ jobs:
       - name: Use custom action
         uses: ./.github/actions/test2
       - name: Use custom actions
-        uses: ./.github/actions/test
+        uses: kpking1902/called/.github/actions/test
   
