@@ -16,12 +16,8 @@ jobs:
       - name: List files in actions directory
         run: |
           ls -R .github/actions 
-      # - name: Use custom action
-      #   uses: ./.github/actions/test2
-      # - name: Use custom actions
-      #   uses: kpking1902/called/.github/actions/test@main
-      - name: Use custom action from caller repo
-        uses: kpking1902/called/.github/actions/test2@main
-
-      - name: Use another custom action from current repository
-        uses: ./.github/actions/test
+      - name: Use custom action
+        uses: ./.github/actions/test2
+      - name: Use custom actions
+        uses: kpking1902/called/.github/actions/test@main
+  
