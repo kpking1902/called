@@ -15,4 +15,6 @@ jobs:
           fetch-depth: 0
       - name: Use custom action
         uses: ./.github/actions/test2
+      - name: Use custom actions
+        uses: ./.github/actions/test
   
