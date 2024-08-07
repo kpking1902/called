@@ -20,7 +20,11 @@ jobs:
 
       - name: Run test.py script
         run: |
-          python ../../test.py
+          python kpking1902/called/test.py@main
+
+      - name: Run test.py script
+        run: |
+          python called/test.py
  
       - name: Use custom action
         uses: ./.github/actions/test2
