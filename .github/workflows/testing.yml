@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: Checkout caller repository
         uses: actions/checkout@v4
- 
+        with:
+          repository: kpking1902/caller
+          path: caller
 
       - name: Use custom action
-        uses: ./github/actions/test2
+        uses: ./caller/.github/actions/test2
+      - name: use called action
+        uses: .github/actions/test
