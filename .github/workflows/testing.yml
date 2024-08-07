@@ -13,14 +13,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: List all files and directories
+      - name: List all files and directories in the root directory
         run: |
-          echo "Listing all files and directories:"
-          ls -R
-      - name: List all files and directories in a specific directory
+          echo "Listing all files and directories in the root directory:"
+          ls -R /
+
+      - name: List all files and directories in the .github directory
         run: |
-          echo "Listing all files and directories in .github:"
+          echo "Listing all files and directories in the .github directory:"
           ls -R .github
+
 
       - name: Use custom action
         uses: ./.github/actions/test2
