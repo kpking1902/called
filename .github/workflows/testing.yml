@@ -8,16 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout caller repository
-        uses: actions/checkout@v4
-        with:
-          repository: kpking1902/caller
-          path: caller
+ 
       - name: checkout called
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Use custom action
-        uses: ./caller/.github/actions/test2
-      - name: use called action
-        uses: ./.github/actions/test
+        uses: ./.github/actions/test2
+  
