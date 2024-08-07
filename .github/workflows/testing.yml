@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Use custom action
-        uses: ./.github/actions/test2
+        uses: ./.github/actions/test2@main
       - name: Use custom actions
-        uses: kpking1902/called/.github/actions/test
+        uses: kpking1902/called/.github/actions/test@main
   
