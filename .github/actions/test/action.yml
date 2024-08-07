@@ -1,11 +1,11 @@
 name: 'Test Echo Action'
-description: print it
+description: 'Print it'
 
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - name: printing 
       id: print
       run: |
         echo 'hi we are in called repo'
-        
+      shell: bash
