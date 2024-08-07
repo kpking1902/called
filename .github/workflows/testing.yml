@@ -13,6 +13,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: get version
-        uses: .github/actions/test2@main
+        uses: kpking1902/caller/.github/actions/test2@main
 
     
