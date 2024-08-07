@@ -1,0 +1,18 @@
+name: 'testing called'
+
+on:
+  workflow_call:
+
+jobs:
+  checkout-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: get version
+        uses: kpking1902/called/.github/actions/test@main
+
+    
