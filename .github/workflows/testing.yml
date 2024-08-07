@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
       - name: List files in actions directory
         run: |
-          ls -R .github/actions 
+          ls 
       - name: Use custom action
         uses: ./.github/actions/test2
       - name: Use custom actions
